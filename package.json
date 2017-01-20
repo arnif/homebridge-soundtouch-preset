@@ -1,7 +1,7 @@
 {
   "name": "homebridge-soundtouch-preset",
   "version": "1.0.0",
-  "description": "Homebridge SoundTouch Preseet",
+  "description": "Homebridge SoundTouch Preset",
   "author": "CONNCTED",
   "dependencies": {
     "soundtouch": "3.0.2"

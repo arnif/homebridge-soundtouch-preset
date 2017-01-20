@@ -2,7 +2,7 @@
 
 [Bose SoundTouch](https://www.bose.com/soundtouch-systems.html) plugin for [Homebridge](https://github.com/nfarina/homebridge)
 
-This allows you to control your SoundTouch devices with HomeKit and Siri.
+This allows you to play and pause Presets on your SoundTouch devices with HomeKit and Siri.
 
 ##Installation
 1. Install homebridge using: npm install -g homebridge
