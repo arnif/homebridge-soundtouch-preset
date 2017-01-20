@@ -2,11 +2,11 @@
 
 [Bose SoundTouch](https://www.bose.com/soundtouch-systems.html) plugin for [Homebridge](https://github.com/nfarina/homebridge)
 
-This allows you to control your SoundTouch devices with HomeKit and Siri.
+This allows you to play and pause Presets on your SoundTouch devices with HomeKit and Siri.
 
 ##Installation
 1. Install homebridge using: npm install -g homebridge
-2. Install this plugin using: npm install -g homebridge-soundtouch
+2. Install this plugin using: npm install -g homebridge-soundtouch-preset
 3. Update your configuration file. See the sample below.
 
 ##Configuration
@@ -15,18 +15,20 @@ Example config.json:
 ```
     "accessories": [
 		{
-			"accessory": "SoundTouch",
-			"name": "Speaker Bathroom",
-			"room": "Bathroom"
+			"accessory": "SoundTouch-Preset",
+			"name": "Preset",
+			"room": "Bathroom",
+      "preset": "1"
 		}
 	],
 ```
 
-Fields: 
+Fields:
 
-* "accessory": Must always be "SoundTouch" (required)
+* "accessory": Must always be "SoundTouch-Preset" (required)
 * "name": The name you want to use to control the SoundTouch.
 * "room": Should match exactly with the name of the SoundTouch device.
+* "preset": Preset number you wish to play.
 
 Don't use soundtouch or music as name, because Siri will try to open the SoundTouch or Apple Music app.
 
@@ -42,15 +44,5 @@ In fact, for HomeKit this accessory is treated like a switch (because music acce
 
 ##Siri (English)
 
-* Hé Siri, is speaker bathroom enabled?
-* Hé Siri, is speaker bathroom playing?
-* Hé Siri, turn speaker bathroom on
-* Hé Siri, turn speaker bathroom off
-
-
-##Siri (Dutch)
-
-* Hé Siri, is de speaker badkamer ingeschakeld?
-* Hé Siri, is speaker badkamer aan het spelen?
-* Hé Siri, schakel speaker badkamer in
-* Hé Siri, schakel speaker badkamer uit
+* Hey Siri, turn Preset on
+* Hey Siri, turn Preset off

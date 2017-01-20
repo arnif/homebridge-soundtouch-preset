@@ -10,9 +10,10 @@
 
 	"accessories": [
 		{
-			"accessory": "SoundTouch",
-			"name": "Bathroom Speakers",
-			"room": "Bathroom"
+			"accessory": "SoundTouch-Preset",
+			"name": "Preset",
+			"room": "Bathroom",
+			"preset": "1"
 		}
 	],
 
